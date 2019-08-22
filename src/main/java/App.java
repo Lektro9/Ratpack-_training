@@ -1,17 +1,13 @@
-import com.google.gson.Gson;
 import ratpack.exec.Promise;
-import ratpack.http.Request;
-import ratpack.http.Status;
+import ratpack.handling.Chain;
 import ratpack.jackson.Jackson;
-import ratpack.parse.Parse;
+import ratpack.server.BaseDir;
 import ratpack.server.RatpackServer;
 import ratpack.util.MultiValueMap;
 
-import java.net.http.HttpClient;
 import java.util.ArrayList;
-import java.util.List;
 
-import static ratpack.jackson.Jackson.*;
+import static ratpack.jackson.Jackson.json;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,6 +20,7 @@ public class App {
         users.add(user1);
 
         RatpackServer.start(serverSpec -> serverSpec
+                .serverConfig(c -> c.baseDir(BaseDir.find()).build())
                 .handlers(chain -> chain
                         .get(ctx -> {
                             MultiValueMap<String, String> nameMap = ctx.getRequest().getQueryParams();

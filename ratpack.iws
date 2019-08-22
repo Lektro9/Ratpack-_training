@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ratpack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ratpack.iml" afterDir="false" />
@@ -98,6 +97,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -119,6 +119,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -128,6 +129,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LarsK\Desktop\ratpack\src\main\resources\static" />
+      <recent name="C:\Users\LarsK\Desktop\ratpack\src\main" />
+      <recent name="C:\Users\LarsK\Desktop\ratpack\src\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,7 +217,8 @@
       <option name="presentableId" value="Default" />
       <updated>1566309566866</updated>
       <workItem from="1566309567964" duration="821000" />
-      <workItem from="1566368146739" duration="17051000" />
+      <workItem from="1566368146739" duration="17983000" />
+      <workItem from="1566456262790" duration="3184000" />
     </task>
     <servers />
   </component>
@@ -221,7 +230,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
