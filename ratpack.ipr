@@ -12,8 +12,8 @@
       <entry name="!?*.java" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel target="11">
-      <module name="ratpack.main" target="11" />
-      <module name="ratpack.test" target="11" />
+      <module name="ratpack.main" target="1.8" />
+      <module name="ratpack.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="CopyrightManager" default="" />
@@ -72,7 +72,7 @@
       <module fileurl="file://$PROJECT_DIR$/ratpack.test.iml" filepath="$PROJECT_DIR$/ratpack.test.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
@@ -80,6 +80,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project1" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0">

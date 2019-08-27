@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Methods and Computed Exercise Start</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div class="contain">
+    <h2>User Database</h2>
+
+    <div class="new">
+      <h3>Add a New User</h3>
+      <form>
+        <button @click="fetchJson">get Users</button>
+        <input v-model.number="newId" placeholder="id" type="number" required/>
+        <input v-model="newName" placeholder="name" required/>
+        <input v-model="newEmail" placeholder="email" required/>
+        <button type="submit" @click="addUser">Add New User</button>
+      </form>
+    </div>
+
+    <input v-model="searchWord" placeholder="Search by name"/>
+
+    <select v-model="selected">
+      <option disabled value="">Filter with a label</option>
+      <option value="">All</option>
+      <option>Gmail</option>
+      <option>Scoop-Software</option>
+      <option>Web</option>
+    </select>
+
+    <div v-for="(user,i) in filteredBySearchBar" class="post">
+      <p>{{ user.name }}</p>
+      <small>{{ user.email }}</small>
+      <div v-if="editTrig === user.id">
+        <p>ID: {{user.id}}</p>
+        <input v-model="editName" required v-on:keyup.13="updateUser(user)"/>
+        <input v-model="editEmail" required v-on:keyup.13="updateUser(user)"/>
+        
+        <button class="edit" v-on:keyup.13="updateUser(user)" v-on:click="updateUser(user)">save</button>
+      </div>
+      <div v-else>
+        <button class="edit" v-on:click="trigEditTrig(user)">edit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
